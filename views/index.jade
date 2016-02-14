@@ -1,0 +1,19 @@
+extends layout
+  
+block content
+  h1 Welcome to the Homepage!
+  
+  h2 Signup Here
+  
+  form(action="/auth/signup" method="POST")
+    input(label="Email" type="email" name="email")
+    input(label="Password" type="password" name="password")
+    button(type="submit") Create Account
+    
+    
+  h2 Login Here
+  
+  form(action="/auth/login" method="POST")
+    input(label="Email" type="email" name="email")
+    input(label="Password" type="password" name="password")
+    button(type="submit") Login
